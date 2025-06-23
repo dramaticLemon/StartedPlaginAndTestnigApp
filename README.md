@@ -83,4 +83,20 @@ java -jar first_testing_app-1.0-SNAPSHOT.jar
 
 </project>
 
+
+```
+# Для удобного запуска  mvn compile exec:java 
+``` xml
+<plugin>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>exec-maven-plugin</artifactId>
+  <version>3.1.0</version>
+  <configuration>
+    <mainClass>com.example.App</mainClass>
+                <arguments>
+                    <argument>аргумент1</argument>
+                    <argument>аргумент2</argument>
+                </arguments>
+    </configuration>
+</plugin>
 ```
